@@ -546,3 +546,49 @@ section {
         margin-bottom: 2rem;
     }
 }
+/* Project findings */
+.project-findings {
+  margin-bottom: 1.2rem;
+}
+.finding {
+  font-size: 0.88rem;
+  color: var(--text-dark);
+  padding: 5px 0;
+  border-bottom: 1px solid var(--border-light);
+  opacity: 0.85;
+}
+.finding:last-child { border-bottom: none; }
+
+/* Project buttons */
+.project-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.btn-live, .btn-report, .btn-code {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.btn-live {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: white;
+}
+.btn-report {
+  background-color: #f0fdf4;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+.btn-code {
+  background-color: var(--bg-light);
+  color: var(--primary-color);
+  border: 1px solid var(--border-light);
+}
+.btn-live:hover, .btn-report:hover, .btn-code:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
